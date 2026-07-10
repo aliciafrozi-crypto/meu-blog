@@ -1,54 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-        <style>
-            header{
-                background-color:#010a36;
-                color:#fefeff;
-                max-width: 800px;
-                margin: 0 auto;
-                 padding: 16px;
-                border: 5px solid
-                #141a6d<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog sobre tecnologia e programação">
+  <title>Blog Tech</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-        <style>
-            header{
-                background-color:#f0acde;
-                color:#010a36;
-                max-width: 800px;
-                margin: 0 auto;
-                 padding: 16px;
-                border: 5px solid
-                #E434FF
-            }
-            main{
-                background-color:#e6e6eb;
-                color: #150b6b;
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-            }
-        </style>
-    </head>
-    <body>
-        <header> 
-            <h1>Meu blog tech</h1>
-            <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-        </header>
-            <main> 
-                <h2>Meu primeiro post</h2>
-                <p>Por:alicia</p>
-                <p>Boas vindas ao meu novo blog! aqui vou compartilhar dicas de programação e curiosidade na area de tecnologia.</p>
-            </main>
-    </body>
-    </html>
-    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;      /* centraliza horizontalmente */
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    /* Container principal – também centralizado */
+    .container {
+      max-width: 800px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;      /* centraliza o conteúdo interno */
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #020e4d;
+      color: #ffffff;
+      padding: 24px 16px;
+      border: 5px solid #141a6d;
+      border-radius: 12px 12px 0 0;
+      text-align: center;       /* texto centralizado */
+      width: 100%;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #c8d4f0;
+    }
+
+    /* Conteúdo principal */
+    main {
+      background-color: #ffffff;
+      color: #1a1a2e;
+      padding: 32px 24px;
+      border-left: 5px solid #141a6d;
+      border-right: 5px solid #141a6d;
+      border-bottom: 5px solid #141a6d;
+      border-radius: 0 0 12px 12px;
+      text-align: center;       /* TUDO CENTRALIZADO */
+      line-height: 1.6;
+      width: 100%;
+    }
+
+    main h2 {
+      color: #020e4d;
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .autor {
+      font-weight: bold;
+      color: #3a4a8a;
+      margin-bottom: 16px;
+    }
+
+    main p {
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    /* Rodapé */
+    footer {
+      max-width: 800px;
+      width: 100%;
+      margin-top: 24px;
+      text-align: center;
+      color: #5c70ca;
+      padding: 12px 0;
+      border-top: 2px solid #5c70ca;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header>
+      <h1>📘 Meu blog tech</h1>
+      <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <h2>Meu primeiro post</h2>
+      <p class="autor">Por: Alicia</p>
+      <p>
+        Boas vindas ao meu novo blog! Aqui vou compartilhar dicas de programação
+        e curiosidades na área de tecnologia.
+      </p>
+      <p>
+        Fique ligado para conteúdos sobre HTML, CSS, JavaScript e muito mais!
+      </p>
+    </main>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2026 – Blog da Alicia | Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
+
